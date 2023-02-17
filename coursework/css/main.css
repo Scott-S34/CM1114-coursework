@@ -1,0 +1,103 @@
+
+/*
+ main text colour and selection colour = black
+ secondary text and reading background colour = white
+ background colour = yellow
+ accent and interactive feature colour = red
+ main colour = blueviolet
+
+ */
+
+
+
+
+ nav li {
+    border:2px solid red;
+    background-color:blueviolet;
+    list-style-type: none;
+
+}
+
+nav li a {
+    color: white;
+    text-align:center;
+    text-decoration:none;
+}
+
+nav li:hover {
+    background-color: black;
+}
+
+.active {
+    background-color: blueviolet;
+}
+
+
+
+table {
+    font-family:ariel;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border:2px;
+    border-style:collaspe;
+    border-color:white;
+}
+
+table tr:nth-child(even){
+    background-color:grey;
+}
+
+table tr:hover {
+    background-color:yellow;
+}
+
+table th{
+    background-color:blueviolet;
+    color:white;
+}
+
+
+body{
+    background-color: yellow;
+}
+
+header {
+    background-color:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: ariel;
+    color : black;
+}
+
+h1 {
+    font-size : h1;
+}
+
+h3 {
+    font-size: h3;
+}
+
+p {
+    font-size : p;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
