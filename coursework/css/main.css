@@ -8,24 +8,15 @@
 
  */
 
-
-
-
- nav li {
-    border:2px solid red;
-    background-color:blueviolet;
-    list-style-type: none;
-
+#heading{
+    display:inline;
 }
 
-nav li a {
-    color: white;
-    text-align:center;
-    text-decoration:none;
-}
-
-nav li:hover {
-    background-color: black;
+#logo{
+    height: 50 px;
+    width:50px;
+    float : left;
+    margin-right:10px;
 }
 
 .active {
@@ -33,6 +24,50 @@ nav li:hover {
 }
 
 
+
+#left-col{
+    float:left;
+    width:60%;
+    padding:10px;
+}
+
+
+#right-col{
+    width:30%;
+    float:right;
+}
+
+#row{
+    display:table;
+    clear:both;
+}
+
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav li {
+    border:2px solid red;
+    background-color:blueviolet;
+    list-style-type: none;
+    float:left;
+    width:11%;
+    padding:9px;
+
+
+}
+
+nav li a {
+    color: white;
+    text-decoration:none;
+}
+
+nav li:hover {
+    background-color: black;
+}
 
 table {
     font-family:ariel;
@@ -67,6 +102,7 @@ header {
     background-color:white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -88,7 +124,7 @@ p {
 
 main{
     background-color: white;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 
 aside{
