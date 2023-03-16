@@ -24,6 +24,16 @@
     background-color: blueviolet;
 }
 
+fieldset{
+    border:1px solid grey;
+    width:900px;
+
+}
+
+legend{
+    text-align:left;
+}
+
 
 
 #left-col{
@@ -36,7 +46,10 @@
 #right-col{
     width:30%;
     float:right;
+    margin-left: 100px;
+    margin-top: 50px;
 }
+
 
 #row{
     display:table;
