@@ -8,7 +8,8 @@
 
  */
 
-#heading{
+
+ #heading{
     display:inline;
 }
 
@@ -75,12 +76,13 @@ nav li:hover {
 table {
     font-family:ariel;
     border-collapse: collapse;
+    width:100%;
 }
 
 table td, table th{
-    border:2px;
-    border-style:collaspe;
-    border-color:white;
+    border:2px; 
+    border-style: solid;
+    border-color: white;
 }
 
 table tr:nth-child(even){
@@ -152,10 +154,69 @@ footer {
     margin-top:15px;
 }
 
+
 #home-carousel .carousel-inner {
-    height:500px;
+    height:700px;
 }
 
 #home-carousel .carousel-inner img {
     height: 100%;
+    position: relative;
+    margin-left: 230px;
 }
+
+
+#home-carousel .carousel-inner p{
+    color: blueviolet;
+    bottom:50px;
+    right:35px;
+    text-align:center;
+    position:relative;
+}
+
+.gallery-img{
+    width:100%;
+}
+
+#img-gallery{
+    padding-top:10px;
+}
+
+#img-gallery .row{
+    margin-bottom:10px;
+}
+
+
+
+#murr-shrink {
+    height:77%;
+}
+
+#sal-shrink{
+    height:77%;
+}
+
+#joe-shrink{
+    height:76.5%;
+}
+
+#jokers-page{
+    padding-top:10px;
+    width:100%;
+    background-color:rgb(33, 70, 33);
+}
+
+#jokers-page .row .col-sm{
+    margin-bottom:10px;
+    border:2px solid purple;
+}
+
+
+
+
+#jokers-page .col-sm img{
+    width:100%;
+}
+
+
+
