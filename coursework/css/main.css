@@ -1,11 +1,9 @@
-
 /*
  main text colour and selection colour = black
  secondary text and reading background colour = white
  background colour = yellow
  accent and interactive feature colour = red
  main colour = blueviolet
-
  */
 
 
@@ -168,6 +166,10 @@ footer {
 }
 
 
+#sign-in{
+    float:right;
+}
+
 #home-carousel .carousel-inner {
     height:700px;
 }
@@ -202,17 +204,20 @@ footer {
 
 
 #murr-shrink {
-    height:77%;
+    height:82%;
 }
 
 #sal-shrink{
-    height:77%;
+    height:82%;
 }
 
 #joe-shrink{
-    height:76.5%;
+    height:82%;
 }
 
+#jokers-page .container{
+    width:100%;
+}
 #jokers-page{
     padding-top:10px;
     width:100%;
@@ -225,11 +230,10 @@ footer {
 }
 
 
-
+#jokers-page .col-sm h4{
+    text-align:center;
+}
 
 #jokers-page .col-sm img{
     width:100%;
 }
-
-
-
