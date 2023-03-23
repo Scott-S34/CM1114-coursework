@@ -7,6 +7,9 @@
  */
 
 
+
+
+
  #heading{
     display:inline;
 }
@@ -18,9 +21,17 @@
     margin-right:10px;
 }
 
-.active {
-    background-color: blueviolet;
+
+
+nav .active {
+    background-color: red;
 }
+
+#home-carousel .active {
+    background-color:blueviolet;
+}
+
+
 
 fieldset{
     border:1px solid grey;
@@ -65,7 +76,7 @@ nav ul {
 }
 
 nav li {
-    border:2px solid red;
+    border:2px solid white;
     background-color:blueviolet;
     list-style-type: none;
     float:left;
@@ -93,11 +104,11 @@ table {
 table td, table th{
     border:2px; 
     border-style: solid;
-    border-color: white;
+    border-color: #F0F0F0;
 }
 
 table tr:nth-child(even){
-    background-color:grey;
+    background-color:#F2F2F2;
 }
 
 table tr:hover {
@@ -220,8 +231,7 @@ footer {
 }
 #jokers-page{
     padding-top:10px;
-    width:100%;
-    background-color:rgb(33, 70, 33);
+    background-color:blueviolet;
 }
 
 #jokers-page .row .col-sm{
@@ -236,4 +246,17 @@ footer {
 
 #jokers-page .col-sm img{
     width:100%;
+    height:30%;
+}
+
+
+#his-first-time{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.youtube-videos{
+    margin:30px;
+    padding:30px;
+    border:15px;
 }
