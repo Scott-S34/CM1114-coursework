@@ -1,9 +1,12 @@
+//function which provides message showing the form was sent in the contact us page
 function send_form(id, text){
     var getId = document.getElementById(id);
     getId.innerHTML = text;
 
 }
 
+
+//function which tells the user they have logged in and logged out
 var counter = 2;
 function login(){
    
@@ -16,7 +19,7 @@ function login(){
 }
 
 
-
+//event listeners for images in the image gallery 
 document.getElementById("jokers-tour").addEventListener("mouseover", highlight1);
 document.getElementById("jokers-tour").addEventListener("mouseout", delight2);
 document.getElementById("jokers-tour").addEventListener("mouseout", grayImage1);
@@ -65,6 +68,8 @@ document.getElementById("sal-glory").addEventListener("mouseout", delight9);
 document.getElementById("sal-glory").addEventListener("mouseout", grayImage9)
 
 
+
+////event listeners for images in the Jokers page 
 document.getElementById("q-hidden").addEventListener("mouseover", revealHiddenQImage);
 document.getElementById("murr-hidden").addEventListener("mouseover", revealHiddenMurrImage);
 document.getElementById("sal-hidden").addEventListener("mouseover", revealHiddenSalImage);
@@ -76,43 +81,54 @@ document.getElementById("sal-hidden").addEventListener("mouseout", returnOrigina
 document.getElementById("joe-hidden").addEventListener("mouseout", returnOriginalJoe);
 
 
+
+
+
+//function which changes the image of Q when the user overs their cursor over it
 function revealHiddenQImage(){
     document.getElementById("q-hidden").src = "images/qPeterPan.png";
 }
 
+//function which changes the image of Murr when the user overs their cursor over it
 function revealHiddenMurrImage(){
     document.getElementById("murr-hidden").src = "images/human-pinata.webp";
 }
 
+//function which changes the image of Sal when the user overs their cursor over it
 function revealHiddenSalImage() {
     document.getElementById("sal-hidden").src = "images/sal-and-tattoo.webp";
 }
 
+//function which changes the image of Joe when the user overs their cursor over it
 function revealHiddenJoeImage() {
     document.getElementById("joe-hidden").src = "images/wrapped-house.jpg";
 }
 
 
-
+//function which brings the original image of Q back when the user takes their cursor out of the image
 function returnOriginalQ(){
     document.getElementById("q-hidden").src = "images/Q.webp";
 }
 
+//function which brings the original image of Murr back when the user takes their cursor out of the image
 function returnOriginalMurr(){
     document.getElementById("murr-hidden").src = "images/Murr.webp";
 }
 
+//function which brings the original image of Sal back when the user takes their cursor out of the image
 function returnOriginalSal() {
     document.getElementById("sal-hidden").src = "images/Sal.webp";
 }
 
+//function which brings the original image of Joe back when the user takes their cursor out of the image
 function returnOriginalJoe() {
     document.getElementById("joe-hidden").src = "images/Joe.webp";
 }
 
 
 
-function highlight1(galleryImage){
+//functions which add extra decoration to each image when the user hovers their cousor over it in the image gallery
+function highlight1(){
     document.getElementById("jokers-tour").style = "border: dotted purple 6px;"
 
 }
@@ -152,9 +168,7 @@ function highlight9(){
 
 
 
-
-
-
+//functions which remove the decoration when the user brings their cursor off it
 function delight1() {
     document.getElementById("jokers-tour").style = "border: none";
 }
@@ -187,7 +201,6 @@ function delight6() {
 }
 
 
-
 function delight7() {
     document.getElementById("ferret").style = "border: none";
 }
@@ -205,6 +218,7 @@ function delight9() {
 
 
 
+//functions which grey off the image when the user hovrs their cursor off it
 function grayImage1(){
     delight1();
     var grayedTour = document.getElementById("jokers-tour");
@@ -263,8 +277,4 @@ function grayImage9(){
     var grayedSal = document.getElementById("sal-glory");
     grayedSal.style.filter = "grayscale(100%)";
 }
-
-
-
-
 
