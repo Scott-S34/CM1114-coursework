@@ -1,31 +1,39 @@
 <html>
     <head>
         <title>Impractical Jokers society</title>
-        
+
+        <!-- Linking bootstrap framework-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
          
+        <!-- Linking external Javascript file for functionality-->
         <script src = "scripts/functionality.js"></script>
 
-        <link rel = "stylesheet", href = "css/main.css">
+        <!--Linking external CSS file for design and layout-->
+        <link rel = "stylesheet" href = "css/main.css">
 
     </head>
     <body>
         <header>
+            <!--Logo image and webpage title-->
             <img id = "logo" src = "images/logo.jfif" alt = "The logo">
             <h1 id = "heading">Impractical Jokers Society</h1>
 
+
+            <!--form to sign into an account-->
             <form id = sign-in>
+                <!-- Email address field-->
                 <label for = "email"></label>
-                <input type = "text" name="email" value="email">
+                <input type = "text" name="email" id = "email" value="email">
 
                 <label for = "password"></label>
-                <input type = "text" name = "password" value = "password">
+                <input type = "text" name = "password" id ="password" value = "password">
 
                 <button type = "button" onclick = login()>Login</button>
             </form>
         </header>
 
+        <!--Navigation bar-->
         <nav>
             <ul>
                 <li class = "active"> <a href = "index.html"> Home </a></li>
@@ -41,7 +49,9 @@
 
         <main>
             <div>
+                <!-- welcome header -->
                 <h3> Welcome to the Impractical Jokers society! </h3>
+                <!--Brief introduction message-->
                 <p>
                     The Impractical Jokers (IJs) society is a society at RGU
                     all about the four jokers! Whether it be Joe, Sal, Q or Murr 
@@ -51,8 +61,9 @@
                 </p>
             </div>
 
+            <!-- 3-image carousel -->
             <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
-                <!--indicators -->
+                <!--indicator buttons -->
                 <ol class = "carousel-indicators">
                     <li data-bs-target="#home-carousel" data-bs-slide-to="0" class="active">
                         
@@ -84,11 +95,9 @@
                 <!--buttons-->
                 <a class = "carousel-control-prev" href="#home-carousel" role ="button" data-bs-slide = "prev">
                     <span class = "carousel-control-prev-icon"></span>
-                    <!--<span class = "visually-hidden">Previous</span> -->
                 </a>
                 <a class = "carousel-control-next" href="#home-carousel" role = "button" data-bs-slide="next">
                     <span class = "carousel-control-next-icon"></span>
-                    <!--<span class = "visually-hidden" >Next</span>-->
                 </a>
 
 

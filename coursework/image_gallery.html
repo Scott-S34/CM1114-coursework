@@ -2,20 +2,27 @@
     <head>
         <title>Impractical Jokers Society</title>
 
+        <!-- Linking bootstrap framework-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
          
+        <!-- Linking external Javascript file for functionality-->
         <script src = "scripts/functionality.js"></script>
 
-        <link rel = "stylesheet", href = "css/main.css">
+        <!--Linking external CSS file for design and layout-->
+        <link rel = "stylesheet" href = "css/main.css">
 
     </head>
     <body>
+
+        <!--Logo image and webpage title-->
         <header>
             <img id = "logo" src = "images/logo.jfif" alt = "The logo">
             <h1 id = "heading">Impractical Jokers Society</h1>
         </header>
 
+
+        <!--Navigation bar-->
         <nav>
             <ul>
                 <li> <a href = "index.html"> Home </a></li>
@@ -29,50 +36,54 @@
             </ul>
         </nav>
 
+
+        
         <main>
+            <!--row 1 of images for image gallery -->
             <div id = "img-gallery" class = "container">
                 <div class = "row">
                     <div class = "col-sm">
-                        <img id= "jokers-tour" src = "images/impractical-jokers-tour-1.jpg" alt = "The jokers on tour" onmouseover = highlight1() onmouseout = grayImage1() class = "gallery-img">
+                        <img id= "jokers-tour" src = "images/impractical-jokers-tour-1.jpg" alt = "The jokers on tour" onload= grayImage1() onmouseover = highlight1() onmouseout = grayImage1() class = "gallery-img">
                     </div>
 
                     <div class = "col-sm"> 
-                        <img id = "season-4" src = "images/impractical-jokers-season-4.jpg" alt = "The group all together"  onmouseover = highlight2() onmouseout = grayImage2() class = "gallery-img">
+                        <img id = "season-4" src = "images/impractical-jokers-season-4.jpg" alt = "The group all together" onload= grayImage2() onmouseover = highlight2() onmouseout = grayImage2() class = "gallery-img">
                     </div>
                     
                     <div class = "col-sm">
-                        <img id = "no-Joe" src = "images/IMPRACTICAL_JOKERS_NO_JOE.jpg" alt = "the jokers now, without Joe" onmouseover = highlight3() onmouseout = grayImage3()  class = "gallery-img">
+                        <img id = "no-Joe" src = "images/IMPRACTICAL_JOKERS_NO_JOE.jpg" alt = "the jokers now, without Joe" onload= grayImage3() onmouseover = highlight3() onmouseout = grayImage3()  class = "gallery-img">
                     </div>
                 </div>
 
-
+            <!--row 2 of images for image gallery -->
                 <div class = "row">
 
                     <div class = "col-sm">
-                        <img id = "suits" src = "images/IJInSuits.jfif" alt = "The jokers in suits"  onmouseover = highlight4() onmouseout = grayImage4() class = "gallery-img">
+                        <img id = "suits" src = "images/IJInSuits.jfif" alt = "The jokers in suits" onload= grayImage4() onmouseover = highlight4() onmouseout = grayImage4() class = "gallery-img">
                     </div>
 
                     <div class = "col-sm"> 
-                        <img id = "Q-meme" src = "images/QOldeEnglish.jpg" alt = "Q speaking in Olde English"  onmouseover = highlight5() onmouseout = grayImage5() class = "gallery-img">
+                        <img id = "Q-meme" src = "images/QOldeEnglish.jpg" alt = "Q speaking in Olde English" onload= grayImage5() onmouseover = highlight5() onmouseout = grayImage5() class = "gallery-img">
                     </div>
 
                     <div class = "col-sm">
-                        <img id = "cats" src = "images/salHatesCats.png" alt = "Sal hates Cats" onmouseover = highlight6() onmouseout = grayImage6() class = "gallery-img">
+                        <img id = "cats" src = "images/salHatesCats.png" alt = "Sal hates Cats" onload= grayImage6() onmouseover = highlight6() onmouseout = grayImage6() class = "gallery-img">
                     </div>
                     
                 </div>
 
+            <!--row 3 of images for image gallery -->
             <div class = "row">
                     <div class = "col-sm">
-                        <img id = "ferret" src = "images/murrSkydive.gif" alt = "A ferret skydiving"  onmouseover = highlight7() onmouseout = grayImage7() class = "gallery-img">
+                        <img id = "ferret" src = "images/murrSkydive.gif" alt = "A ferret skydiving" onload= grayImage7() onmouseover = highlight7() onmouseout = grayImage7() class = "gallery-img">
                     </div>
 
                     <div class = "col-sm"> 
-                        <img id = "larry"  src = "images/LARRY.gif" alt = "LARRY!!"  onmouseover = highlight8() onmouseout = grayImage8() class = "gallery-img">
+                        <img id = "larry"  src = "images/LARRY.gif" alt = "LARRY!!" onload= grayImage8() onmouseover = highlight8() onmouseout = grayImage8() class = "gallery-img">
                     </div>
 
                     <div class = "col-sm">
-                        <img id = "sal-glory" src = "images/sal.jfif" alt = "Sal, just Sal"  onmouseover = highlight9() onmouseout = grayImage9() class = "gallery-img">
+                        <img id = "sal-glory" src = "images/sal.jfif" alt = "Sal, just Sal" onload= grayImage9() onmouseover = highlight9() onmouseout = grayImage9() class = "gallery-img">
                     </div>
 
                 </div>
