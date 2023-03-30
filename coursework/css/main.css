@@ -9,7 +9,7 @@
 
 
 /* design for heading for each page*/
- #heading{
+#heading{
     display:inline;
 }
 
@@ -21,40 +21,44 @@
     margin-right:10px;
 }
 
-
-
-
+/* design for the border surrounding the set of fields in the contact us form */
 fieldset{
     border:1px solid grey;
     width:900px;
 
 }
 
+/* sets the position of heading in the contact us form */
 legend{
     text-align:left;
+    font-family:ariel;
 }
 
-
-
+/* sets the layout and design for content of the left-hand side of the contact-us page without bootstrap css */
 #left-col{
     float:left;
     width:60%;
     padding:10px;
+    font-family:ariel;
 }
 
 
+/* sets the layout and design for content of the right-hand side of the contact-us page without bootstrap css */
 #right-col{
     width:30%;
     float:right;
     margin-left: 100px;
     margin-top: 50px;
+    font-family:ariel;
 }
 
 
+/*sets the layout for columns nested in a row  for the main of the contact us page */
 #row{
     display:table;
     clear:both;
 }
+
 
 /*Design for navigation bar*/ 
 nav .active {
@@ -62,11 +66,11 @@ nav .active {
 }
 
 nav ul {
+    width: 111.75% ;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
     margin-left: 15px;
-    margin-right:15px;
     margin-bottom:15px;
 }
 
@@ -77,6 +81,7 @@ nav li {
     float:left;
     width:11%;
     padding:9px;
+    font-family:ariel;
 }
 
 nav li a {
@@ -90,8 +95,8 @@ nav li:hover {
 
 
 
-/*design for table for events calendar page*/
 
+/*design for table for events calendar page*/
 table {
     font-family:ariel;
     border-collapse: collapse;
@@ -117,8 +122,9 @@ table th{
     color:white;
 }
 
-/*design for the body of each page*/
 
+
+/*design for the body of each page*/
 body{
     background-color: yellow;
 }
@@ -132,24 +138,27 @@ header {
     margin-left:15px;
     margin-right:15px;
     margin-top:15px;
+    font-family:ariel;
 }
 
 /*design for each heading text size across the website */
-
 h1, h2, h3, h4, h5, h6, p {
     font-family: ariel;
     color : black;
+    margin-left:5px;
 }
 
-/*design for main segment of each webpage*/
 
+/*design for main segment of each webpage*/
 main{
     background-color: white;
     border-radius: 2px;
     margin-left:15px;
     margin-right:15px;
     margin-top:15px;
+    font-family:ariel;
 }
+
 
 /*design for aside segment of each webpage*/
 aside{
@@ -160,6 +169,7 @@ aside{
     margin-top:15px;
 }
 
+
 /*design for footer segment of each webpage*/
 footer {
     background-color: blueviolet;
@@ -167,6 +177,7 @@ footer {
     margin-left:15px;
     margin-right:15px;
     margin-top:15px;
+    font-family:ariel;
 }
 
 
@@ -175,9 +186,7 @@ footer {
     float:right;
 }
 
-
 /*design for image carousel in index page*/
-
 #home-carousel .active {
     background-color:blueviolet;
 }
@@ -192,13 +201,13 @@ footer {
     margin-left: 230px;
 }
 
-
 #home-carousel .carousel-inner p{
     color: blueviolet;
     bottom:50px;
     right:35px;
     text-align:center;
     position:relative;
+    font-family:ariel;
 }
 
 
@@ -208,18 +217,16 @@ footer {
     width:100%;
 }
 
-
 /*formatting for all images within the image gallery page */
-
 #img-gallery{
     padding-top:10px;
 }
+
 
 /*formatting for between each row of images in the image gallery page*/
 #img-gallery .row{
     margin-bottom:10px;
 }
-
 
 /*design to alter the size of Murr's image from the About the Jokers page */
 #murr-shrink {
@@ -236,21 +243,18 @@ footer {
     height:82%;
 }
 
-
 /*formatting for all images in Jokers page within the 4 column layout */
-
 #jokers-page .container{
     width:100%;
 }
 
 
-
 /*design for 4 column layout in Jokers page */
-
 #jokers-page{
     padding-top:10px;
     background-color:blueviolet;
 }
+
 
 /*design for 4 column layout for each row and column in Jokers page */
 #jokers-page .row .col-sm{
@@ -260,6 +264,7 @@ footer {
 
 /*design for headings in each column in the jokers page */
 #jokers-page .col-sm h4{
+    font-family:ariel;
     text-align:center;
 }
 
@@ -270,8 +275,11 @@ footer {
     height:30%;
 }
 
+
+
 /*altering text for Murr's bio from the end of the second paragraph*/
 #his-first-time{
+    font-family: ariel;
     font-style: italic;
     font-weight: bold;
 }
@@ -282,3 +290,30 @@ footer {
     padding:30px;
     border:15px;
 }
+
+/*formatting for all images in Merch page within the 2 x 2 layout */
+#merch-page .container{
+    width:100%;
+}
+
+
+/*Setting the formatting and adding in a border for each merch image */ 
+#merch-page .col-sm img{
+    width:550px;
+    height:80%; 
+    border:2px solid red;
+    cursor:pointer;
+}
+
+/*adding addditional spacing between content in the article and the bottom of the aside section in the home page */
+#society-article{
+    margin-top:30px;
+}
+
+/* additional formatting for the image in the article in the home page*/
+#society-article img{
+    width:300px;
+    height:300px;
+    margin-bottom:5px;
+}
+
