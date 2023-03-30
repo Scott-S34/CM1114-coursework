@@ -2,36 +2,72 @@
     <head>
         <title>Impractical Jokers Society</title>
 
+        <!--Linking Bootstrap framework-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         
+        <!-- Linking external javascript file for functionality-->
         <script src = "scripts/functionality.js"></script>
         
+        <!-- Linking external CSS file for design and layout-->
         <link rel = "stylesheet" href = "css/main.css">
 
     </head>
     <body>
+        <!--Logo and webpage title -->
         <header>
             <img id = "logo" src = "images/logo.jfif" alt = "The logo">
             <h1 id = "heading">Impractical Jokers Society</h1>
         </header>
 
+        <!--Navigation bar -->
         <nav>
             <ul>
                 <li> <a href = "index.html"> Home </a></li>
                 <li> <a href = "image_gallery.html"> Gallery</a></li>
                 <li> <a href = "current_members.html"> Current Members </a> </li>
                 <li> <a href = "events_calendar.html"> Events </a> </li>
-                <li> <a href = "contact_us.html"> Contact us </a></li>
+                <li> <a href = "contact_us.html"> Contact Us </a></li>
                 <li> <a href = "jokers.html">About The Jokers</a></li>
                 <li> <a href = "clips.html">Clips</a></li>
                 <li class = "active"> <a href = "merch.html">Merch</a></li>
             </ul>
         </nav>
 
-        <main></main>
+        <main>
+            <h3>The Impractical Jokers have MERCH, click on an item to add it to a crave list, refresh the page to refresh your list!</h3>
+            <br></br>
+            <h3>We would love to see you arrive to any of our events showcasing your merch choices! </h3>
+            <div class = "container" id = "merch-page">
+                <div class = "row">
+                    <div class = "col-sm">
+                        <img id = "t-shirt" onclick = incrementList() src = "images/jokers-tee.jpg" alt = "Jokers T-shirt">
 
-        <aside></aside>
+                    </div>
+                    <div class = "col-sm">
+                        <img id = "hoodie" onclick = incrementList() src = "images/jokers-hoodie.jpeg" alt = "Impractical Jokers logo on hoodie">
+                    </div>
+
+                </div>
+                <div class = "row">
+                    <div class = "col-sm">
+                        <img id  = "purple-t" onclick = incrementList() src = "images/jokers-tee-purple.jpg" alt = "Jokers T-shirt with new design and in purple">
+                    </div>
+                    <div class  = "col-sm">
+                        <img id = "mug" onclick = incrementList() src = "images/sal-mug.jpg" alt = "Sal mug">
+                    </div>
+                </div>
+            </div>
+            
+            
+        </main>
+
+        <!--section indicating where further details about merch can be found-->
+        <aside>
+            <p>  You can find out more about colour choices, sizes and other options through <a href = "https://printerval.com/uk/search?q=Impractical+jokers">Printerval</a>
+            or <a href = "https://www.amazon.co.uk/s?k=impractical+jokers+t-shirts&adgrpid=1175378829090547&hvadid=73461378339650&hvbmt=bp&hvdev=c&hvlocphy=4951&hvnetw=o&hvqmt=p&hvtargid=kwd-73461312065491%3Aloc-188&hydadcr=22800_2172800&tag=mh0a9-21&ref=pd_sl_67efj124r5_p">
+            Amazon</a>. </p>
+        </aside>
 
         <footer>
             <p>Copyright SCOTT SOIZA</p>

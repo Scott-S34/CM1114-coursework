@@ -26,7 +26,7 @@
                 <li> <a href = "image_gallery.html"> Gallery</a></li>
                 <li> <a href = "current_members.html"> Current Members </a> </li>
                 <li> <a href = "events_calendar.html"> Events </a> </li>
-                <li class = "active"> <a href = "contact_us.html"> Contact us </a></li>
+                <li class = "active"> <a href = "contact_us.html"> Contact Us </a></li>
                 <li> <a href = "jokers.html">About The Jokers</a></li>
                 <li> <a href = "clips.html">Clips</a></li>
                 <li> <a href = "merch.html">Merch</a></li>
@@ -38,34 +38,36 @@
             <div id = "row">
                 <div id = "left-col">
                     <h3>Contact us</h3>
+                    <br></br>
                     <form>
                         <fieldset>
-                            <legend>You can do so using the form below: </legend>
+                            <legend>You can do so using the form below: </legend><br></br>
 
                             <!--name field-->
                             <label for = "name">Name:</label>
-                            <input type = "text" name="name" id = "name" value=""> <br>
+                            <input type = "text" name="name" id = "name" value=""> <br></br>
 
                             <!--Email address field -->
                             <label for = "email">Email address:</label>
-                            <input type = "text" name="email" id = "email" value=""/><br>
+                            <input type = "text" name="email" id = "email" value=""/><br></br>
 
                             <!-- Membership status field -->
                             <label for = "email">Membership Status:</label>
                             <label for = "member">Member</label>
                             <input type = "radio" name = "status" id = "member" value = "Member">
                             <label for="non-member">Non-member</label> 
-                            <input type = "radio" name = "status" id = "non-member" value = "Non-member">  <br>
+                            <input type = "radio" name = "status" id = "non-member" value = "Non-member">  <br> </br>
                             
                             <!-- Further comments field-->
                             <label for ="comments">Comments:</label>
-                            <input type = "text" name="Comments" id = "comments" value = ""><br>
+                            <input type = "text" name="Comments" id = "comments" value = ""><br> </br>
 
                             <!--File attachment fileld-->
                             <label for = "attachments">Attach a file: </label>
-                            <input type = "file" name = "Any attachments" id = "attachments" value=""> <br>
+                            <input type = "file" name = "Any attachments" id = "attachments" value=""> <br> </br>
+                            
 
-                            <button type = "button" onclick = 'send_form("form_outcome", "Form has been sent successfully" )'>Submit</button><br>
+                            <button type = "button" onclick = 'send_form("form_outcome", "Form has been sent successfully")'>Submit</button><br>
 
                            
                         </fieldset>
