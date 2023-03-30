@@ -18,8 +18,28 @@ function login(){
     counter ++;
 }
 
+//function which increments the number of list items by 1 by clicking on an image in the merch page
+var totalItems = 0;
+function incrementList(){
+    totalItems++;
+    if(totalItems == 1) {
+        alert("You have " + totalItems + " item on your crave list");
+    } else {
+        alert("You have " + totalItems +" items on your crave list");
+    }
+}
+//event listeners for each image in merch page - to be able to click on the images
 
-//event listeners for images in the image gallery 
+document.getElementById("t-shirt").addEventListener("click", incrementList);
+document.getElementById("purple-t").addEventListener("click", incrementList);
+document.getElementById("hoodie").addEventListener("click", incrementList);
+document.getElementById("mug").addEventListener("click", incrementList);
+
+
+
+
+
+//event listeners for each image image in the image gallery - (1) adding decoration outside the image, (2) removing the added decoration, (3) greying out the image
 document.getElementById("jokers-tour").addEventListener("mouseover", highlight1);
 document.getElementById("jokers-tour").addEventListener("mouseout", delight2);
 document.getElementById("jokers-tour").addEventListener("mouseout", grayImage1);
@@ -68,65 +88,6 @@ document.getElementById("sal-glory").addEventListener("mouseout", delight9);
 document.getElementById("sal-glory").addEventListener("mouseout", grayImage9)
 
 
-
-////event listeners for images in the Jokers page 
-document.getElementById("q-hidden").addEventListener("mouseover", revealHiddenQImage);
-document.getElementById("murr-hidden").addEventListener("mouseover", revealHiddenMurrImage);
-document.getElementById("sal-hidden").addEventListener("mouseover", revealHiddenSalImage);
-document.getElementById("joe-hidden").addEventListener("mouseover", revealHiddenJoeImage);
-
-document.getElementById("q-hidden").addEventListener("mouseout", returnOriginalQ);
-document.getElementById("murr-hidden").addEventListener("mouseout", returnOriginalMurr);
-document.getElementById("sal-hidden").addEventListener("mouseout", returnOriginalSal);
-document.getElementById("joe-hidden").addEventListener("mouseout", returnOriginalJoe);
-
-
-
-
-
-//function which changes the image of Q when the user overs their cursor over it
-function revealHiddenQImage(){
-    document.getElementById("q-hidden").src = "images/qPeterPan.png";
-}
-
-//function which changes the image of Murr when the user overs their cursor over it
-function revealHiddenMurrImage(){
-    document.getElementById("murr-hidden").src = "images/human-pinata.webp";
-}
-
-//function which changes the image of Sal when the user overs their cursor over it
-function revealHiddenSalImage() {
-    document.getElementById("sal-hidden").src = "images/sal-and-tattoo.webp";
-}
-
-//function which changes the image of Joe when the user overs their cursor over it
-function revealHiddenJoeImage() {
-    document.getElementById("joe-hidden").src = "images/wrapped-house.jpg";
-}
-
-
-//function which brings the original image of Q back when the user takes their cursor out of the image
-function returnOriginalQ(){
-    document.getElementById("q-hidden").src = "images/Q.webp";
-}
-
-//function which brings the original image of Murr back when the user takes their cursor out of the image
-function returnOriginalMurr(){
-    document.getElementById("murr-hidden").src = "images/Murr.webp";
-}
-
-//function which brings the original image of Sal back when the user takes their cursor out of the image
-function returnOriginalSal() {
-    document.getElementById("sal-hidden").src = "images/Sal.webp";
-}
-
-//function which brings the original image of Joe back when the user takes their cursor out of the image
-function returnOriginalJoe() {
-    document.getElementById("joe-hidden").src = "images/Joe.webp";
-}
-
-
-
 //functions which add extra decoration to each image when the user hovers their cousor over it in the image gallery
 function highlight1(){
     document.getElementById("jokers-tour").style = "border: dotted purple 6px;"
@@ -173,13 +134,9 @@ function delight1() {
     document.getElementById("jokers-tour").style = "border: none";
 }
 
-
-
 function delight2() {
     document.getElementById("season-4").style = "border: none";
 }
-
-
 
 function delight3() {
     document.getElementById("no-Joe").style = "border: none";
@@ -214,8 +171,6 @@ function delight8() {
 function delight9() {
     document.getElementById("sal-glory").style = "border: none";
 }
-
-
 
 
 //functions which grey off the image when the user hovrs their cursor off it
@@ -277,4 +232,65 @@ function grayImage9(){
     var grayedSal = document.getElementById("sal-glory");
     grayedSal.style.filter = "grayscale(100%)";
 }
+
+
+
+////event listeners for images in the Jokers page - (1) revealing hidden image when hovering over the original (2) reverting back to the original after hovering away
+document.getElementById("q-hidden").addEventListener("mouseover", revealHiddenQImage);
+document.getElementById("murr-hidden").addEventListener("mouseover", revealHiddenMurrImage);
+document.getElementById("sal-hidden").addEventListener("mouseover", revealHiddenSalImage);
+document.getElementById("joe-hidden").addEventListener("mouseover", revealHiddenJoeImage);
+
+document.getElementById("q-hidden").addEventListener("mouseout", returnOriginalQ);
+document.getElementById("murr-hidden").addEventListener("mouseout", returnOriginalMurr);
+document.getElementById("sal-hidden").addEventListener("mouseout", returnOriginalSal);
+document.getElementById("joe-hidden").addEventListener("mouseout", returnOriginalJoe);
+
+
+
+
+//function which changes the image of Q when the user overs their cursor over it
+function revealHiddenQImage(){
+    document.getElementById("q-hidden").src = "images/qPeterPan.png";
+}
+
+//function which changes the image of Murr when the user overs their cursor over it
+function revealHiddenMurrImage(){
+    document.getElementById("murr-hidden").src = "images/human-pinata.webp";
+}
+
+//function which changes the image of Sal when the user overs their cursor over it
+function revealHiddenSalImage() {
+    document.getElementById("sal-hidden").src = "images/sal-and-tattoo.webp";
+}
+
+//function which changes the image of Joe when the user overs their cursor over it
+function revealHiddenJoeImage() {
+    document.getElementById("joe-hidden").src = "images/wrapped-house.jpg";
+}
+
+
+//function which brings the original image of Q back when the user takes their cursor out of the image
+function returnOriginalQ(){
+    document.getElementById("q-hidden").src = "images/Q.webp";
+}
+
+//function which brings the original image of Murr back when the user takes their cursor out of the image
+function returnOriginalMurr(){
+    document.getElementById("murr-hidden").src = "images/Murr.webp";
+}
+
+//function which brings the original image of Sal back when the user takes their cursor out of the image
+function returnOriginalSal() {
+    document.getElementById("sal-hidden").src = "images/Sal.webp";
+}
+
+//function which brings the original image of Joe back when the user takes their cursor out of the image
+function returnOriginalJoe() {
+    document.getElementById("joe-hidden").src = "images/Joe.webp";
+}
+
+
+
+
 
