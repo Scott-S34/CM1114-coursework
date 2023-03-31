@@ -101,13 +101,18 @@ table {
     font-family:ariel;
     border-collapse: collapse;
     width:100%;
+    table-layout:fixed;
+    font-size: 10pt;
 }
 
 table td, table th{
     border:2px; 
     border-style: solid;
     border-color: #F0F0F0;
+    padding:8px;
 }
+
+
 
 table tr:nth-child(even){
     background-color:#F2F2F2;
@@ -120,6 +125,7 @@ table tr:hover {
 table th{
     background-color:blueviolet;
     color:white;
+    text-align:center;
 }
 
 
@@ -203,6 +209,7 @@ footer {
 
 #home-carousel .carousel-inner p{
     color: blueviolet;
+    font-weight:bold;
     bottom:50px;
     right:35px;
     text-align:center;
@@ -286,7 +293,7 @@ footer {
 
 /*alteration of the page layout for each youtube clip in the clips page*/
 .youtube-videos{
-    margin:30px;
+    margin:60px;
     padding:30px;
     border:15px;
 }
@@ -308,6 +315,7 @@ footer {
 /*adding addditional spacing between content in the article and the bottom of the aside section in the home page */
 #society-article{
     margin-top:30px;
+    border: solid 5px red;
 }
 
 /* additional formatting for the image in the article in the home page*/
@@ -316,4 +324,3 @@ footer {
     height:300px;
     margin-bottom:5px;
 }
-
