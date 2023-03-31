@@ -6,17 +6,41 @@ function send_form(id, text){
 }
 
 
-//function which tells the user they have logged in and logged out
-var counter = 2;
+//function which tells the user they have logged in and logged out provided that they put in something 
+//for the email and password
+
+var counter = 1;
 function login(){
    
-    if(counter % 2 == 0){
-        alert("You have been logged in!");
+    // if(counter % 2 == 0){
+    //     alert("You have been logged in!");
+    // } else {
+    //     alert("You have been loggout out");
+    // }
+    // counter ++;
+
+    var email = document.forms["sign-in"]["email"].value;
+    var password = document.forms["sign-in"]["password"].value;
+    if(email == "" || email == "email"){
+        alert("To log in, you must have an email address!");
     } else {
-        alert("You have been loggout out");
+        if(password == "" || password == "password") {
+            alert("To log in, you must have your password!");
+        } 
     }
-    counter ++;
+    
+    if(counter%2 == 0 && (email != "" && email != "email") && (password != "" && password != "password" )) {
+        alert("You have been logged in");
+        
+    }
+    if(counter % 2 != 0 && (email != "" && email != "email") && (password != "" && password != "password" ) ){
+        alert("You have been logged out!");
+    }
+    counter++;
+
+
 }
+
 
 //function which increments the number of list items by 1 by clicking on an image in the merch page
 var totalItems = 0;
@@ -28,6 +52,10 @@ function incrementList(){
         alert("You have " + totalItems +" items on your crave list");
     }
 }
+
+
+
+
 //event listeners for each image in merch page - to be able to click on the images
 
 document.getElementById("t-shirt").addEventListener("click", incrementList);
@@ -293,4 +321,17 @@ function returnOriginalJoe() {
 
 
 
-
+function submit_event() {
+    var title = document.forms["events"]["event_title"].value;
+    var date = document.forms["events"]["event_date"].value;
+    if(title == ""){
+        alert("An event must have a title!");
+    } 
+    else {
+        if(date.length == 0) {
+            alert("An event must have a date!");
+        } else {
+            alert("Event submitted! The society will contact you soon!")
+        }
+    }
+}
