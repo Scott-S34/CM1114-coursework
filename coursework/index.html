@@ -13,6 +13,19 @@
         <link rel = "stylesheet" href = "css/main.css">
 
     </head>
+
+    <!-- Threat Model
+    
+        Threat source: External
+        Threat Agent: Human
+        Threat Intention: Intentional
+        Threat Motivation: Malicious
+        Threat Impact: Stealing confidential user details, user spoofing, changing
+requirements to sign in to the form.
+        Threat Mitigation: Login validation, strict requirements for suitable user passwords,
+create a secure data warehouse for user details.
+    -->
+
     <body>
         <header>
             <!--Logo image and webpage title-->
@@ -29,7 +42,7 @@
                 <label for = "password"></label>
                 <input type = "text" name = "password" id ="password" value = "password">
 
-                <button type = "button" onclick = login()>Login</button>
+                <button type = "button" onclick = 'login()'>Login</button>
             </form>
         </header>
 
@@ -114,8 +127,12 @@
                         <img src = "images/pizza-event.jpg" alt = "Pizza party">
                     </div>
                     <div class = "col-sm">
-                        <h3>PIZZA PARTY THIS AUGUST</h3>
-                        <p>party</p>
+                        <h3>PIZZA TIME</h3>
+                        <p>To celebrate the end of an intense University semester as well as an incredible
+                            academic year, we are throwing a party with none other than PIZZA!
+                            Come down to the student union this weekend from the 15th of April for food,
+                            drinks, jokes and fun! 
+                        </p>
                     </div>
                 </div>
                
@@ -123,7 +140,7 @@
         </aside>
 
         <footer>
-            <p>Copyright SCOTT SOIZA</p>
+            <p>Copyright SCOTT SOIZA 2023</p>
         </footer>
 
         
