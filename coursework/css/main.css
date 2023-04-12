@@ -192,6 +192,7 @@ footer {
     float:right;
 }
 
+
 /*design for image carousel in index page*/
 #home-carousel .active {
     background-color:blueviolet;
@@ -235,20 +236,6 @@ footer {
     margin-bottom:10px;
 }
 
-/*design to alter the size of Murr's image from the About the Jokers page */
-#murr-shrink {
-    height:82%;
-}
-
-/*design to alter the size of Sal's image from the About the Jokers page */
-#sal-shrink{
-    height:82%;
-}
-
-/*design to alter the size of Joe's image from the About the Jokers page */
-#joe-shrink{
-    height:82%;
-}
 
 /*formatting for all images in Jokers page within the 4 column layout */
 #jokers-page .container{
@@ -282,8 +269,7 @@ footer {
     height:30%;
 }
 
-
-
+ 
 /*altering text for Murr's bio from the end of the second paragraph*/
 #his-first-time{
     font-family: ariel;
