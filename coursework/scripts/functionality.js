@@ -170,12 +170,9 @@ function delight3() {
     document.getElementById("no-Joe").style = "border: none";
 }
 
-
-
 function delight4() {
     document.getElementById("suits").style = "border: none";
 }
-
 
 function delight5() {
     document.getElementById("Q-meme").style = "border: none";
@@ -185,16 +182,13 @@ function delight6() {
     document.getElementById("cats").style = "border: none";
 }
 
-
 function delight7() {
     document.getElementById("ferret").style = "border: none";
 }
 
-
 function delight8() {
     document.getElementById("larry").style = "border: none";
 }
-
 
 function delight9() {
     document.getElementById("sal-glory").style = "border: none";
@@ -276,7 +270,6 @@ document.getElementById("joe-hidden").addEventListener("mouseout", returnOrigina
 
 
 
-
 //function which changes the image of Q when the user overs their cursor over it
 function revealHiddenQImage(){
     document.getElementById("q-hidden").src = "images/qPeterPan.png";
@@ -296,7 +289,6 @@ function revealHiddenSalImage() {
 function revealHiddenJoeImage() {
     document.getElementById("joe-hidden").src = "images/wrapped-house.jpg";
 }
-
 
 //function which brings the original image of Q back when the user takes their cursor out of the image
 function returnOriginalQ(){
@@ -320,7 +312,7 @@ function returnOriginalJoe() {
 
 
 
-
+//function which checks to see that something has been entered for both the title and date cells in the events page
 function submit_event() {
     var title = document.forms["events"]["event_title"].value;
     var date = document.forms["events"]["event_date"].value;
