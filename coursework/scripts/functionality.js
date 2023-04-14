@@ -6,18 +6,31 @@ function send_form(id, text){
 }
 
 
+
+
+
+
+
+
+
+
+
 //function which tells the user they have logged in and logged out provided that they put in something 
 //for the email and password
-
-var counter = 1;
+var counter = 0;
 function login(){
    
+    //code for old version of the function
+
     // if(counter % 2 == 0){
     //     alert("You have been logged in!");
     // } else {
     //     alert("You have been loggout out");
     // }
     // counter ++;
+
+    //end of code for old version
+
 
     var email = document.forms["sign-in"]["email"].value;
     var password = document.forms["sign-in"]["password"].value;
@@ -29,17 +42,24 @@ function login(){
         } 
     }
     
-    if(counter%2 == 0 && (email != "" && email != "email") && (password != "" && password != "password" )) {
+    if(counter == 0 && (email != "" && email != "email") && (password != "" && password != "password" )) {
         alert("You have been logged in");
-        
+        counter=1;
     }
-    if(counter % 2 != 0 && (email != "" && email != "email") && (password != "" && password != "password" ) ){
+    else if(counter == 1 && (email != "" && email != "email") && (password != "" && password != "password" ) ){
         alert("You have been logged out!");
+        counter=0;
     }
-    counter++;
+    
 
 
 }
+
+
+
+
+
+
 
 
 //function which increments the number of list items by 1 by clicking on an image in the merch page
@@ -114,6 +134,8 @@ document.getElementById("larry").addEventListener("mouseout", grayImage8);
 document.getElementById("sal-glory").addEventListener("mouseover", highlight9);
 document.getElementById("sal-glory").addEventListener("mouseout", delight9);
 document.getElementById("sal-glory").addEventListener("mouseout", grayImage9)
+
+
 
 
 //functions which add extra decoration to each image when the user hovers their cousor over it in the image gallery
